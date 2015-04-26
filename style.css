@@ -1,0 +1,42 @@
+/*http://paletton.com/#uid=33G0Q0kwi++bu++hX++++rd++kX color scheme*/
+
+body{
+    background-color:#ACCCFF;
+    color: #ACCCFF;
+}
+
+header{
+    background-color: #FFEE00;
+    color: #002B6E;
+    text-align: center;
+    font-size: 16pt;
+    margin: 0px;
+    margin-bottom: 8px;
+    
+}
+
+nav{
+    border: medium solid #002B6E;
+    background: #FFEE00;
+    border-radius: 2px;
+    width: 10%;
+    float: left;
+    text-decoration: none;
+}
+
+.navButton{
+    color: #002B6E;
+    border: thin solid #1771FF;
+    border-radius: 2px;
+    text-decoration: none;
+    
+}
+
+.filter{
+    display: inline;
+    margin: 1em;
+    padding: 1em;
+    border: solid thin #000;
+    text-decoration: none;
+    
+}
