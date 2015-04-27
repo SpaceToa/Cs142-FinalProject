@@ -2,8 +2,8 @@
     <head>
         <title>Bored Gamers Board</title>
         <meta charset="utf-8">
-        <meta name="author" content="Andy Green">
-        <meta name="description" content="List of links to all of my CS 142 assignemts ">
+        <meta name="author" content="Andy Green, Chris Mahmood">
+        <meta name="description" content="A site to connect with other gamers and play">
 
         <link rel="stylesheet" href="style.css" media="screen">
 
@@ -11,7 +11,7 @@
             <script src="//html5shim.googlecode.com/sin/trunk/html5.js"></script>
         <![endif]-->
     </head>
-    
+    <body>    
     <header>
         <h1 id="banner">Board Gamers Board</h1>
     </header>
@@ -22,6 +22,8 @@
             <a href="forum.php"><li class="navButton">Forum</li></a>
             <a href="calender.php"><li class="navButton">Calender</li></a>
             <a href="events.php"><li class="navButton">Events</li></a>
+            <a href="giveaway.php"><li class="navButton">Giveaways</li></a>
+            <a href="submit.php"><li class="navButton">Submit</li></a>
         </ul>
     </nav>
    
@@ -41,5 +43,8 @@
     
     </section>
     
-    
+    <footer>
+        <p>Created by Andy Green and Chris Mahmood</p>
+    </footer>
+    </body>
 </html>
