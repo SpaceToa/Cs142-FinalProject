@@ -69,11 +69,11 @@ if (isset($_POST["btnSubmit"])){
  $dataRecord=array();   
 
     //starting actual recoding all varialbe
- $dataRecord[] =$name ;
- $dataRecord[] =$account;
- $dataRecord[] =$system;
- $dataRecord[] =$game;
- $dataRecord[] =$description;
+ $dataRecord[] =$name+ "," ;
+ $dataRecord[] =$accoun+ ",";
+ $dataRecord[] =$system+ ",";
+ $dataRecord[] =$game+ ",";
+ $dataRecord[] =$description+ ",";
  $dataRecord[] =$timeSubmit;
  
  
