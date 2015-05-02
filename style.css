@@ -1,38 +1,72 @@
 /*http://paletton.com/#uid=33G0Q0kwi++bu++hX++++rd++kX color scheme*/
 
 body{
-    background-color:#ACCCFF;
+    background-color:#777777;
     color: #000;
 }
 
 header{
-    background-color: #FFEE00;
-    color: #002B6E;
+    background-color: #3D3D3D;
     text-align: center;
-    font-size: 16pt;
     margin: 0px;
-    margin-bottom: 8px;
+    margin-bottom: 2em;
+    border-radius: 15px;
+    -webkit-transition: box-shadow linear .5s;
+    transition: box-shadow linear .5s;
     
+}
+
+header:hover{
+    box-shadow: 0 0 30px #8AE68A;
+}
+
+input[type="text"], textarea {
+
+  background-color : #3D3D3D; 
+  color: #8AE68A; 
+
 }
 
 nav{
-    border: medium solid #002B6E;
-    background: #FFEE00;
+    border: thin solid #000;
+    background: #3D3D3D;
     border-radius: 2px;
+    color:#8AE68A;
+    margin:2em;
     width: 10%;
     float: left;
+    
+}
+nav ul{
+    display: inline-block;
     text-decoration: none;
 }
-
+#system{
+      background-color : #3D3D3D; 
+      color: #8AE68A; 
+}
 .navButton{
-    color: #002B6E;
-    border: thin solid #1771FF;
-    border-radius: 2px;
-    text-decoration: none;
-    
+
+    border: thin solid #000;
+    border-radius: 5px;
+    color: #8AE68A; 
+    list-style: none;
+    margin-bottom: .5em;
+    padding: .5em;
+    text-align:center;
+    -webkit-transition: box-shadow linear .5s;
+    transition: box-shadow linear .5s;
+}
+.navButton:hover{
+        box-shadow: 0 0 5px #8AE68A;
+}
+.navButton a{
+        color: #8AE68A; 
 }
 
 .filter{
+    background-color: #3D3D3D;
+    color:#8AE68A;
     display: inline;
     margin: 1em;
     padding: 1em;
@@ -40,3 +74,13 @@ nav{
     text-decoration: none;
     
 }
+
+
+body.home li#navHome, body.events li#navEvents, body.giveaway li#navGiveaway, body.submit li#navSubmit{
+    
+    background-color:#777777;
+}
+
+
+
+
