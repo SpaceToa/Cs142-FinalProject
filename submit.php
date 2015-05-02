@@ -7,7 +7,11 @@ if(isset($_GET["debug"])){
     $debug = true;
 }
 
+<<<<<<< HEAD
 if ($debug) print "<p>DEBUG MODE IS ON</p>";
+=======
+if ($debug){ print "<p>DEBUG MODE IS ON</p>";}
+>>>>>>> Andys-Work
 
 //Setting variables
 
@@ -21,6 +25,10 @@ $timeSubmit="";
 //get current time
 date_default_timezone_set(America/New_York);
 $date = date('m/d/Y h:i:s a', time());
+<<<<<<< HEAD
+=======
+print $date;
+>>>>>>> Andys-Work
         
 //ERROR variables
 
@@ -30,7 +38,11 @@ $nameERROR=false;
 // Start of Recording to CSV
 
 if (isset($_POST["btnSubmit"])){
+<<<<<<< HEAD
 
+=======
+ print "working";
+>>>>>>> Andys-Work
     //******************************************************************
     // is the refeering web page the one we want or is someone trying 
     // to hack in. this is not 100% reliable but ok for our purposes   */
@@ -52,20 +64,42 @@ if (isset($_POST["btnSubmit"])){
     $description=htmlentities($_POST["txtDescription"],ENT_QUOTES,"UTF-8");;
     $timeSubmit=$date;
     
+<<<<<<< HEAD
     //---^---^--^ Out Till Later
     //include 'validate.php';
     
  $errorMsg=array();
+=======
+    print $name;
+    print $account;
+    print $system;
+    print $game;
+    print $description;
+    print $timeSubmit;
+    
+    //---^---^--^ Out Till Later
+    //include 'validate.php';
+    
+ //$errorMsg=array();
+>>>>>>> Andys-Work
 
     
  $dataRecord=array();   
 
     //starting actual recoding all varialbe
+<<<<<<< HEAD
  $dataRecord[] =$name ;
  $dataRecord[] =$account;
  $dataRecord[] =$system;
  $dataRecord[] =$game;
  $dataRecord[] =$description;
+=======
+ $dataRecord[] =$name+ "," ;
+ $dataRecord[] =$accoun+ ",";
+ $dataRecord[] =$system+ ",";
+ $dataRecord[] =$game+ ",";
+ $dataRecord[] =$description+ ",";
+>>>>>>> Andys-Work
  $dataRecord[] =$timeSubmit;
  
  
@@ -154,7 +188,11 @@ if (isset($_POST["btnSubmit"])){
 
 
                 <label>System</label>
+<<<<<<< HEAD
                 <select id="system" name="system" tabindex="110" size="1">
+=======
+                <select id="system" name="txtSystem" tabindex="110" size="1">
+>>>>>>> Andys-Work
                     <option value="PC" <?php if($align =="PC") echo ' selected="selected" ';?>>PC</option>
                     <option value="PS3" <?php if($align =="PS3") echo ' selected="selected" ';?>>PS3</option>
                     <option value="Xbox 360" <?php if($align =="Xbox 360") echo ' selected="selected" ';?>>Xbox 360</option>
@@ -169,18 +207,30 @@ if (isset($_POST["btnSubmit"])){
 
                 <label for="txtGame">Game</label>
                 <input type="text" id="txtGame" name="txtGame" 
+<<<<<<< HEAD
                        value="<?php echo $account; ?>" 
+=======
+                       value="<?php echo $game; ?>" 
+>>>>>>> Andys-Work
                        tabindex="120" maxlength="30" placeholder="enter games tittle"  onfocus="this.select()" >
 
                 <label for="txtDescription">Description</label>
                 <input type="text" id="txtDescription" name="txtDescription" 
+<<<<<<< HEAD
                        value="<?php echo $account; ?>" 
+=======
+                       value="<?php echo $description; ?>" 
+>>>>>>> Andys-Work
                        tabindex="125" maxlength="200" placeholder="What do you want to do?"  onfocus="this.select()" >
             </fieldset>
             
             <fieldset class="buttons">
                 <legend>Submit or Reset the form</legend>				
+<<<<<<< HEAD
                 <input type="submit" id="btnSubmit" name="btnSubmit" value="Register" tabindex="991" class="button">
+=======
+                <input type="submit" id="btnSubmit" name="btnSubmit" value="Submit" tabindex="991" class="button">
+>>>>>>> Andys-Work
 
                 <input type="reset" id="butReset" name="butReset" value="Reset Form" tabindex="993" class="button" onclick="reSetForm()">
             </fieldset>

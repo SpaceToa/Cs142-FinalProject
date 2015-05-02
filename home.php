@@ -40,9 +40,50 @@
     
     <!-- Feed of submissions -->
     <section id="feed">
+    <?php
     
+//$row = 1;
+//if (($handle = fopen("feedData.csv", "r")) !== FALSE) {
+//    while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
+//        $num = count($data);
+//        echo "<p> $num fields in line $row: <br /></p>\n";
+//        $row++;
+//        for ($c=0; $c < $num; $c++) {
+//            echo $data[$c] . "<br />\n";
+//        }
+//    }
+//    fclose($handle);
+
+
+    
+<<<<<<< HEAD
+=======
+    
+    
+        $row = 1;
+       if (($handle = fopen("feedData.csv", "r")) !== FALSE) {
+            while (($data = fgetcsv($handle, 1000)) !== FALSE) {
+               
+                $num = count($data);
+                echo "<p> $num fields in line $row: <br /></p>\n";
+                $row++;
+                $name= $data[0];
+                $account= $data[1];
+                $system= $data[2];
+                $game= $data[3];
+                $description= $data[4];
+                $timeSubmit= $data[5];
+                
+                include 'feedbox.php';
+        
+        }
+    fclose($handle);
+    }
+    ?>
+        
     </section>
     
+>>>>>>> Andys-Work
     <footer>
         <p>Created by Andy Green and Chris Mahmood</p>
     </footer>
